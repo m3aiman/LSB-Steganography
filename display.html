@@ -1,0 +1,18 @@
+{% extends 'basetemplate.html' %}
+
+{% block head %}
+<title>LSB Stego</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <p><b>Recovered</b> {{value1}} bytes</p>
+    <br>
+    <p><b>Decoded text:</b> {{value}}</p>
+    <script type="text/javascript">
+        document.getElementById("home").onclick = function() {
+            location.href="/"
+        }
+    </script>
+</div>
+{% endblock %}

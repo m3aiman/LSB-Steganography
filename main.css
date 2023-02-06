@@ -1,0 +1,25 @@
+body, html {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: #949599;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+
+}
+
+#content {
+    width: 70%;
+}
+
+.form {
+    margin-top: 20px;
+}

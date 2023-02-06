@@ -1,0 +1,16 @@
+{% extends 'basetemplate.html' %}
+
+{% block head %}
+<title>LSB Stego</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <a href="/encode">Encoding</a>     |       <a href="/decode">Decoding</a>
+    <script type="text/javascript">
+        document.getElementById("home").onclick = function() {
+            location.href="/"
+        }
+    </script>
+</div>
+{% endblock %}

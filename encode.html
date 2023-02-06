@@ -1,0 +1,34 @@
+{% extends 'basetemplate.html' %}
+
+{% block head %}
+<title>LSB Stego</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    Encoding     |       <a href="/decode">Decoding</a>
+
+    <div class="form">
+        <form action="" method="post" enctype="multipart/form-data">
+            <h5>1. Choose a .wav audio file.</h5>
+            <input type="file" name="audiofile" id="file">
+            <br>
+            <br>
+            <h5>2. Upload the file to be hidden.</h5>
+            <input type="file" name="secretfile" id="file">
+            <br>
+            <br>
+            <h5>3. Enter the number of LSB to be used for hiding the data.</h5>
+            <input type="number" name="lsbnum" id="lsbnum">
+            <br>
+            <br>
+            <input type="submit" value="Encode">
+        </form>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("home").onclick = function() {
+            location.href="/"
+        }
+    </script>
+</div>
+{% endblock %}

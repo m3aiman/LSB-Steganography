@@ -1,0 +1,21 @@
+{% extends 'basetemplate.html' %}
+
+{% block head %}
+<title>LSB Stego</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div class="container">
+        <p><b>Take note of these for decoding:</b></p>
+        <p>Using {{value2}} LSBs, {{value3}} bytes can be hidden.</p>
+        <p>{{value1}} bytes hidden</p>
+        <a href="/return-files/{{value}}" target="blank"><button class='btn btn-default'>Download</button></a>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("home").onclick = function() {
+            location.href="/"
+        }
+    </script>
+</div>
+{% endblock %}
